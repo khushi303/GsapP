@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gsap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="h-[10vh]"></div>
+    <div class="container xl:max-w-[1172px] overflow-hidden mt-20">
+      <div class="contain relative h-[500px] flex items-center">
+        <div class="px-20 box_1 w-full absolute left-0">
+          <div
+            class="flex flex-row w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
+          >
+            <div class="w-3/6">
+              <img
+                src="./assets/images/svg/on-chain.svg"
+                alt="onchain"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="w-3/6 pl-10">
+              <h2 class="text-4xl text-black font-semibold">On Chain</h2>
+              <p class="text-lg text-black font-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat qui molestias harum illum porro itaque deserunt.
+                Deserunt minus nihil itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 box_2 w-full absolute left-[110%]">
+          <div
+            class="flex flex-row w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
+          >
+            <div class="w-3/6">
+              <img
+                src="./assets/images/svg/on-chain.svg"
+                alt="onchain"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="w-3/6 pl-10">
+              <h2 class="text-4xl text-black font-semibold">On Chain</h2>
+              <p class="text-lg text-black font-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat qui molestias harum illum porro itaque deserunt.
+                Deserunt minus nihil itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 box_3 w-full absolute left-[110%]">
+          <div
+            class="flex flex-row w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
+          >
+            <div class="w-3/6">
+              <img
+                src="./assets/images/svg/on-chain.svg"
+                alt="onchain"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="w-3/6 pl-10">
+              <h2 class="text-4xl text-black font-semibold">On Chain</h2>
+              <p class="text-lg text-black font-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat qui molestias harum illum porro itaque deserunt.
+                Deserunt minus nihil itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 box_4 w-full absolute left-[110%]">
+          <div
+            class="flex flex-row w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
+          >
+            <div class="w-3/6">
+              <img
+                src="./assets/images/svg/on-chain.svg"
+                alt="onchain"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="w-3/6 pl-10">
+              <h2 class="text-4xl text-black font-semibold">On Chain</h2>
+              <p class="text-lg text-black font-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat qui molestias harum illum porro itaque deserunt.
+                Deserunt minus nihil itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="px-20 box_5 w-full absolute left-[110%]">
+          <div
+            class="flex flex-row w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
+          >
+            <div class="w-3/6">
+              <img
+                src="./assets/images/svg/on-chain.svg"
+                alt="onchain"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="w-3/6 pl-10">
+              <h2 class="text-4xl text-black font-semibold">On Chain</h2>
+              <p class="text-lg text-black font-normal">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quaerat qui molestias harum illum porro itaque deserunt.
+                Deserunt minus nihil itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="line w-0 h-3 bg-black text-end mt-auto bg-black rounded-xl"
+      ></div>
+    </div>
+
+    <div class="h-screen"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".container",
+          pin: true,
+          start: "-10% top",
+          scrub: 3,
+        },
+      });
+      tl.to(".box_1", {
+        scale: 0.9,
+        left: "-5%",
+        duration: 10,
+      })
+        .to(
+          ".line",
+          {
+            width: "20%",
+            duration: 10,
+          },
+          "-=2"
+        )
+        .to(
+          ".box_2",
+          {
+            duration: 11,
+            left: "1%",
+          },
+          "-=5"
+        )
+        .to(
+          ".line",
+          {
+            width: "40%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_1",
+          {
+            scale: 0.8,
+            left: "-10%",
+            duration: 10,
+          },
+          "-=8"
+        )
+        .to(
+          ".box_2",
+          {
+            scale: 0.9,
+            left: "-4%",
+            duration: 10,
+          },
+          "-=8"
+        )
+        .to(
+          ".box_3",
+          {
+            duration: 10,
+            left: "2%",
+          },
+          "-=2"
+        )
+        .to(
+          ".line",
+          {
+            width: "60%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_1",
+          {
+            scale: 0.7,
+            left: "-14%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_2",
+          {
+            scale: 0.8,
+            left: "-9%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_3",
+          {
+            scale: 0.9,
+            duration: 10,
+            left: "-4%",
+          },
+          "-=2"
+        )
+        .to(
+          ".line",
+          {
+            width: "80%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_4",
+          {
+            duration: 10,
+            left: "1%",
+          },
+          "-=9"
+        )
+        .to(
+          ".box_1",
+          {
+            scale: 0.6,
+            left: "-20%",
+            duration: 10,
+          },
+          "-=2"
+        )
+        .to(
+          ".box_2",
+          {
+            scale: 0.7,
+            left: "-15%",
+            duration: 10,
+          },
+          "-=9"
+        )
+        .to(
+          ".box_3",
+          {
+            scale: 0.8,
+            duration: 10,
+            left: "-10%",
+          },
+          "-=9"
+        )
+        .to(".box_4", { scale: 0.9, duration: 10, left: "-5%" }, "-=9")
+        .to(
+          ".box_5",
+          {
+            duration: 10,
+            left: ".5%",
+          },
+          "-=9"
+        )
+        .to(
+          ".line",
+          {
+            width: "100%",
+            duration: 10,
+          },
+          "-=9"
+        );
+    </script>
+  </body>
+</html>
