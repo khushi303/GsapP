@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="lg:h-[50vh]"></div>
-    <div class="container xl:max-w-[1172px] overflow-hidden mt-20 main_contain">
-      <div class="contain relative lg:h-[400px] h-[550px] flex items-center">
-        <div class="px-20 box_1 w-full absolute left-0 top-0">
+    <div class="lg:h-[50vh] h-[60vh]"></div>
+    <div class="container xl:max-w-[1172px] overflow-hidden lg:mt-20 -mt-10 main_contain">
+      <div class="contain relative lg:h-[350px] h-[500px] flex items-center">
+        <div class="sm:px-20 px-5 box_1 w-full absolute left-0 top-0">
           <div
             class="flex lg:flex-row flex-col w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
           >
@@ -33,7 +33,7 @@
             </div>
           </div>
         </div>
-        <div class="px-20 box_2 w-full absolute left-[110%] top-0">
+        <div class="sm:px-20 px-5 box_2 w-full absolute left-[110%] top-0">
           <div
             class="flex lg:flex-row flex-col w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
           >
@@ -54,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="px-20 box_3 w-full absolute left-[110%] top-0">
+        <div class="sm:px-20 px-5 box_3 w-full absolute left-[110%] top-0">
           <div
             class="flex lg:flex-row flex-col w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
           >
@@ -75,7 +75,7 @@
             </div>
           </div>
         </div>
-        <div class="px-20 box_4 w-full absolute left-[110%] top-0">
+        <div class="sm:px-20 px-5 box_4 w-full absolute left-[110%] top-0">
           <div
             class="flex lg:flex-row flex-col w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
           >
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="px-20 box_5 w-full absolute left-[110%] top-0">
+        <div class="sm:px-20 px-5 box_5 w-full absolute left-[110%] top-0">
           <div
             class="flex lg:flex-row flex-col w-full bg-white flex-nowrap p-4 rounded-3xl border border-black items-center"
           >
@@ -149,7 +149,7 @@
         scrollTrigger: {
           trigger: ".container",
           pin: true,
-          start: "-40% top",
+          start: "-20% top",
           scrub: 3,
         },
       });
@@ -297,7 +297,7 @@
             duration: 10,
             left: ".5%",
           },
-          "-=9"
+          "-=6"
         )
         .to(
           ".line",
